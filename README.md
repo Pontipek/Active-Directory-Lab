@@ -2,8 +2,8 @@
 
 ## 📑 Table of Contents
 - [Overview](#-overview)
-- [Installation Process](#)
-- [Active Directory for IT Usage](#)
+- [Installation Process](#%EF%B8%8F-installation-process)
+- [Active Directory for IT Usage](#-active-directory-for-it-usage)
 - [Resources](#-resources)
 
 ---
@@ -11,7 +11,7 @@
 This repository guides you through creating an Active Directory home lab using Windows Server 2025 inside VMware. You will learn how to deploy a Domain Controller, manage users, configure Group Policies, and simulate real IT support tasks.
 
 ## 🛠️ Installation Process
-1. Install VMware
+#### 1. Install VMware
 Download and install **VMware Workstation Pro 17** (free for personal use).
 
 **Steps:**
@@ -22,7 +22,7 @@ Download and install **VMware Workstation Pro 17** (free for personal use).
 
 **YouTube Video:** *(coming soon)*
 
-2. Download & Install Windows Server 2025
+#### 2. Download & Install Windows Server 2025
 Start by downloading the ISO: <br/> 
 https://info.microsoft.com/ww-landing-evaluate-windows-server-2025.html
 
@@ -36,14 +36,24 @@ https://info.microsoft.com/ww-landing-evaluate-windows-server-2025.html
 
 **YouTube Video:** *(coming soon)*
 
-3. Set Up Active Directory
+#### 3. Set Up Active Directory
+- Open **Server Manager**  
+- Select **Add Roles and Features**  
+- Choose **Role-based installation**  
+- Enable **Active Directory Domain Services**  
+- Install → Promote to Domain Controller  
+- Create a new forest: `corp.local`  
+- Restart the server  
+- Log in as the Domain Administrator  
+
+You should have a working **Domain Controller** after following the steps above.
 
 ## 🧩 Active Directory for IT Usage
-**✔ User & Group Management**  
-**✔ Organizational Units (OUs)**
-**✔ Group Policy Management**  
-**✔ Domain Join Experience**  
-**✔ Real Helpdesk Scenarios** 
+#### ✔ User & Group Management  
+#### ✔ Organizational Units (OUs)
+#### ✔ Group Policy Management 
+#### ✔ Domain Join Experience 
+#### ✔ Real Helpdesk Scenarios
 
 ## 📚 Resources
 - Install VMware 17 pro for personal use free [https://www.youtube.com/watch?v=1w6CH6eTZhM]
@@ -53,5 +63,3 @@ https://info.microsoft.com/ww-landing-evaluate-windows-server-2025.html
 
 ---
 Last Updated: December 2025
-
-
