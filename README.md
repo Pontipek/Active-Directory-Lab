@@ -38,19 +38,14 @@ https://info.microsoft.com/ww-landing-evaluate-windows-server-2025.html
 
 ## 🧩 Active Directory for IT Usage
 
-#### ✔ Set Up Active Directory
-#### ✔ User & Group Management  
-#### ✔ Organizational Units (OUs)
-#### ✔ Group Policy Management 
-#### ✔ Domain Join Experience 
 
 | Topic | Description | Resources |
 |---|---|---|
-| [Set Up Active Directory](#️-installation-process) | Deploy a Domain Controller and configure a new forest | [📄 notes and screenshots](./active-directory-setup/) |
-| [User and Group Management](#-user-and-group-management) | Create and manage user accounts and security groups | [📄 notes and screenshots](./user-group-management/notes.md) |
-| [Organizational Units (OUs)](#-organizational-units-ous) | Organize users and computers into logical containers | [📄 notes and screenshots](./organizational-units/notes.md) |
-| [Group Policy Management](#-group-policy-management) | Enforce settings and rules across the domain | [📄 notes and screenshots](./group-policy-management/notes.md) |
-| [Domain Join Experience](#-domain-join-experience) | Simulate joining a Windows client to the domain | [📄 notes and screenshots](./domain-join-experience/notes.md) |
+| ✔ **Set Up Active Directory**| Deploy a Domain Controller and configure a new forest | [📄 notes and screenshots](./active-directory-setup/) |
+| ✔ **User and Group Management** | Create and manage user accounts and security groups | [📄 notes and screenshots](./user-group-management/notes.md) |
+| ✔ **Organizational Units (OUs)** | Organize users and computers into logical containers | [📄 notes and screenshots](./organizational-units/notes.md) |
+| ✔ **Group Policy Management** | Enforce settings and rules across the domain | [📄 notes and screenshots](./group-policy-management/notes.md) |
+| ✔ **Domain Join Experience** | Simulate joining a Windows client to the domain | [📄 notes and screenshots](./domain-join-experience/notes.md) |
 ---
 
 ### 🎧 Real Helpdesk Scenarios
