@@ -1,4 +1,4 @@
-### 💻 Domain Join Experience
+### Domain Join Experience
 Simulate joining a Windows client machine to your domain.
 
 **Steps:**

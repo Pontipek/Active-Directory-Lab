@@ -1,4 +1,4 @@
-### 🔒 Group Policy Management
+### Group Policy Management
 Group Policies let you enforce settings and rules across users and computers in the domain.
 
 **Steps:**

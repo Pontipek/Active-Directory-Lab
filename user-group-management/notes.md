@@ -1,4 +1,4 @@
-### 👤 User & Group Management
+### User & Group Management
 Create and manage user accounts and groups inside Active Directory Users and Computers (ADUC).
 
 **Steps:**

@@ -1,4 +1,4 @@
-### 🗂 Organizational Units (OUs)
+### Organizational Units (OUs)
 OUs let you organize users, computers, and groups into logical containers — similar to folders.
 
 **Steps:**
