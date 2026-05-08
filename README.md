@@ -20,7 +20,7 @@ Download and install **VMware Workstation Pro 17** (free for personal use).
 - Complete setup  
 - Restart if needed  
 
-**YouTube Video:** *(coming soon)*
+**Reference:** [Install VMware Workstation Pro 17 (YouTube)](https://www.youtube.com/watch?v=1w6CH6eTZhM)
 
 #### 2. Download & Install Windows Server 2025
 Start by downloading the ISO: <br/> 
@@ -34,82 +34,23 @@ https://info.microsoft.com/ww-landing-evaluate-windows-server-2025.html
 - Run Windows Updates  
 - Confirm version using `Winver`
 
-**YouTube Video:** *(coming soon)*
-
-#### 3. Set Up Active Directory
-- Open **Server Manager**  
-- Select **Add Roles and Features**  
-- Choose **Role-based installation**  
-- Enable **Active Directory Domain Services**  
-- Install → Promote to Domain Controller  
-- Create a new forest: `corp.local`  
-- Restart the server  
-- Log in as the Domain Administrator  
-
-You should have a working **Domain Controller** after following the steps above.
+**Reference:** [Install Windows Server 2025 on VMware (YouTube)](https://www.youtube.com/watch?v=SsjV_qYc4GA)
 
 ## 🧩 Active Directory for IT Usage
+
+#### ✔ Set Up Active Directory
 #### ✔ User & Group Management  
 #### ✔ Organizational Units (OUs)
 #### ✔ Group Policy Management 
 #### ✔ Domain Join Experience 
-#### ✔ Real Helpdesk Scenarios
 
----
-
-### 👤 User & Group Management
-Create and manage user accounts and groups inside Active Directory Users and Computers (ADUC).
-
-**Steps:**
-1. Open **Active Directory Users and Computers** from Server Manager > Tools
-2. Expand your domain (e.g., `corp.local`)
-3. Right-click **Users** > **New** > **User**
-4. Fill in the first name, last name, and username (e.g., `jsmith`)
-5. Set a password and configure password settings
-6. Click **Finish** to create the user
-7. To create a group, right-click **Users** > **New** > **Group**
-8. Name the group (e.g., IT Support), set scope to **Global** and type to **Security**
-9. Open the group > **Members** tab > **Add** to assign users
-
----
-
-### 🗂 Organizational Units (OUs)
-OUs let you organize users, computers, and groups into logical containers — similar to folders.
-
-**Steps:**
-1. In ADUC, right-click your domain > **New** > **Organizational Unit**
-2. Name the OU (e.g., IT Department, HR, Finance)
-3. Drag and drop users or computers into the appropriate OU
-4. OUs can have Group Policies applied to them individually
-
----
-
-### 🔒 Group Policy Management
-Group Policies let you enforce settings and rules across users and computers in the domain.
-
-**Steps:**
-1. Open **Group Policy Management** from Server Manager > Tools
-2. Expand your domain > right-click **Group Policy Objects** > **New**
-3. Name the policy (e.g., Password Policy, Desktop Lockdown)
-4. Right-click the policy > **Edit** to open the Group Policy Editor
-5. Navigate to the setting you want to configure (e.g., Computer Configuration > Policies > Windows Settings > Security Settings)
-6. Link the policy to an OU by dragging it or right-clicking the OU > **Link an Existing GPO**
-7. Run `gpupdate /force` on a client machine to apply changes immediately
-
----
-
-### 💻 Domain Join Experience
-Simulate joining a Windows client machine to your domain.
-
-**Steps:**
-1. Set up a second VM running Windows 10 or 11
-2. Set its DNS server to the IP address of your Domain Controller
-3. Go to **Settings** > **System** > **About** > **Domain or workgroup**
-4. Click **Change** and enter your domain name (e.g., `corp.local`)
-5. Enter Domain Administrator credentials when prompted
-6. Restart the VM
-7. Log in using a domain user account (e.g., `corp\jsmith`)
-
+| Topic | Description | Resources |
+|---|---|---|
+| [Set Up Active Directory](#️-installation-process) | Deploy a Domain Controller and configure a new forest | [📄 notes and screenshots](./active-directory-setup/) |
+| [User and Group Management](#-user-and-group-management) | Create and manage user accounts and security groups | [📄 notes and screenshots](./user-group-management/notes.md) |
+| [Organizational Units (OUs)](#-organizational-units-ous) | Organize users and computers into logical containers | [📄 notes and screenshots](./organizational-units/notes.md) |
+| [Group Policy Management](#-group-policy-management) | Enforce settings and rules across the domain | [📄 notes and screenshots](./group-policy-management/notes.md) |
+| [Domain Join Experience](#-domain-join-experience) | Simulate joining a Windows client to the domain | [📄 notes and screenshots](./domain-join-experience/notes.md) |
 ---
 
 ### 🎧 Real Helpdesk Scenarios
