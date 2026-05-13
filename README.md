@@ -4,7 +4,7 @@
 - [Overview](#-overview)
 - [Installation Process](#%EF%B8%8F-installation-process)
 - [Active Directory for IT Usage](#-active-directory-for-it-usage)
-- [Helpdesk Scenarios](#)
+- [Helpdesk Scenarios](#-real-world-helpdesk-scenarios)
 - [Resources](#-resources)
 
 ---
